@@ -1,5 +1,6 @@
 # 20251203更新
 Cherry Studio app打开流式输出功能时openai模型报错"Unknown parameter: stream_options".
+issue:https://github.com/CherryHQ/cherry-studio/issues/11652
 关闭Cherry Studio app 的"流式输出"选项后可以正常使用. 因此想到方法,在代码中清除app发送的stream_options参数,同时在app中继续保持"流式输出"的选项打开,没想到成功解决这个问题.
 
 # Poe-API-Parameter-Injection-for-Cherry-Studio-Web-Search-Thinking-Budget-
