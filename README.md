@@ -1,3 +1,7 @@
+# 20251203更新
+Cherry Studio app打开流式输出功能时openai模型报错"Unknown parameter: stream_options".
+通过在代码中清除app发送的stream_options参数解决.
+
 # Poe-API-Parameter-Injection-for-Cherry-Studio-Web-Search-Thinking-Budget-
 自从POE更新API参数后(似乎是在20251101左右),即不再支持文本注入的方式调用模型内置搜索引擎以及设置思维链长度,cherry studio的websearch/思维链长度选项对于POE的api就不再有效. 已提交issue但截止当前(20251201)官方似乎未能解决相关问题(https://github.com/CherryHQ/cherry-studio/issues/11177), 这对于一不小心开通年费POE会员且对POE网页版功能不满意的我来说有点难以接受,因此找了很多方法,最后依靠Gemini编写了初步可行的注入参数的代码,后续为了方便使用也让Gemini生成了一个webui.我并不会编程,全程依靠Gemini编写,供各位参考.
 
